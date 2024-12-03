@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="survey-container">
+            <h2>Survey</h2>
+            <div id="question-container">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+            <button id="next-button">Next</button>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <h2>Survey Results</h2>
+            <canvas id="surveyCanvas" width="400" height="400"></canvas>
+            <button onclick="restartSurvey()">Restart Survey</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

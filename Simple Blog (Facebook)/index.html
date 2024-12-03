@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-like Micro-Blogging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login Section -->
+    <div id="loginSection">
+        <h2>Login to Facebook</h2>
+        <input type="text" id="username" placeholder="Enter username" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboardSection" style="display: none;">
+        <h2>Welcome, <span id="userDisplayName"></span></h2>
+        <button onclick="logout()">Logout</button>
+
+        <!-- Post Section -->
+        <h3>Create a Post</h3>
+        <textarea id="newPost" placeholder="What's on your mind?" rows="4" required></textarea><br>
+        <button onclick="postContent()">Post</button>
+
+        <h3>Your Posts</h3>
+        <div id="userPosts"></div>
+
+        <!-- Follow Section -->
+        <h3>Follow a User</h3>
+        <input type="text" id="followUser" placeholder="Enter username to follow" required>
+        <button onclick="followUser()">Follow</button>
+
+        <h3>Followed Users</h3>
+        <ul id="followingsList"></ul>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

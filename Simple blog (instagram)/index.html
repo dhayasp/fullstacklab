@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>InstaClone</h1>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('profile')">Profile</button>
+            <button onclick="showSection('messages')">Messages</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active-section">
+            <h2>Feed</h2>
+            <ul id="feed"></ul>
+        </section>
+
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <div id="create-post">
+                <h3>Create a Post</h3>
+                <input type="text" id="post-caption" placeholder="Write a caption..." />
+                <input type="file" id="post-image" />
+                <button onclick="createPost()">Post</button>
+            </div>
+            <h3>Your Posts</h3>
+            <ul id="user-posts"></ul>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+            <div>
+                <label for="message-recipient">Recipient:</label>
+                <select id="message-recipient">
+                    <option value="User1">User1</option>
+                    <option value="User2">User2</option>
+                </select>
+            </div>
+            <textarea id="message-content" placeholder="Write your message..."></textarea>
+            <button onclick="sendMessage()">Send</button>
+        
+            <h3 id="inbox-title">Inbox for User1</h3>
+            <ul id="inbox"></ul>
+        
+            <div>
+                <button onclick="switchUser('User1')">Switch to User1</button>
+                <button onclick="switchUser('User2')">Switch to User2</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 InstaClone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

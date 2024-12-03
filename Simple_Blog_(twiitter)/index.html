@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Blogging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Login Form -->
+        <div id="login-form" class="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <button id="signin-btn">Sign In</button>
+            <p id="login-error" style="color: red;"></p>
+        </div>
+
+        <!-- Main App (hidden until logged in) -->
+        <div id="app" class="app" style="display: none;">
+            <header>
+                <h1>Micro Blogging</h1>
+            </header>
+
+            <!-- New Post Section -->
+            <section class="new-post-section">
+                <textarea id="post-content" placeholder="What's on your mind?" rows="4"></textarea>
+                <button id="post-btn">Post</button>
+            </section>
+
+            <!-- Timeline Section -->
+            <section class="timeline-section">
+                <h3>Your Timeline</h3>
+                <ul id="timeline-list"></ul>
+            </section>
+
+            <!-- Logout Button -->
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

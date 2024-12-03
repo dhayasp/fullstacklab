@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Classifieds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vehicle Classifieds</h1>
+        <p>Buy and Sell Used Vehicles Easily</p>
+    </header>
+
+    <nav>
+        <a href="#sell">Sell Vehicle</a>
+        <a href="#buy">Buy Vehicle</a>
+        <a href="#purchases">Buying Vehicle</a>
+    </nav>
+
+    <main>
+        <section id="sell">
+            <h2>Sell Your Vehicle</h2>
+            <form id="sell-form">
+                <label for="vehicle-name">Vehicle Name:</label>
+                <input type="text" id="vehicle-name" placeholder="Enter vehicle name" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Enter vehicle description" required></textarea>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" placeholder="Enter price in USD" required>
+
+                <label for="image">Image URL:</label>
+                <input type="text" id="image" placeholder="Enter image URL (optional)">
+
+                <button type="button" onclick="addVehicle()">Sell Vehicle</button>
+            </form>
+        </section>
+
+        <section id="buy">
+            <h2>Vehicles for Sale</h2>
+            <ul id="vehicle-list" class="animated-list"></ul>
+        </section>
+
+        <section id="purchases">
+            <h2>Buying Vehicle</h2>
+            <ul id="buying-list" class="animated-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vehicle Classifieds. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

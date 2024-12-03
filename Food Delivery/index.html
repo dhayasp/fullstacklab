@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Food Delivery Service</h1>
+        <p>Order from your favorite restaurants!</p>
+    </header>
+
+    <div class="container">
+        <section id="restaurants">
+            <h2 id="h22">Select a Food Items</h2>
+            <ul>
+                <li><button onclick="showMenu('pizzaPlace')">Pizza Place</button></li>
+                <li><button onclick="showMenu('burgerJoint')">Burger Joint</button></li>
+                <li><button onclick="showMenu('sushiSpot')">Sushi Spot</button></li>
+            </ul>
+        </section>
+
+        <section id="menu" style="display:none;">
+            <h2>Menu</h2>
+            <div id="menu-list"></div>
+            <button onclick="backToRestaurants()">Back to Restaurants</button>
+        </section>
+
+        <section id="order-summary" style="display:none;">
+            <h2>Order Summary</h2>
+            <div id="order-items"></div>
+            <button onclick="placeOrder()">Place Order</button>
+            <button onclick="cancelOrder()">Cancel Order</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Delivery Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

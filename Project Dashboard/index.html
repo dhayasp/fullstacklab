@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dynamic Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>Dashboard Overview</h2>
+            <div class="widgets">
+                <div class="widget" id="high-priority-widget">
+                    <h3>High Priority Tasks</h3>
+                    <p id="high-priority-count">0</p>
+                </div>
+                <div class="widget" id="medium-priority-widget">
+                    <h3>Medium Priority Tasks</h3>
+                    <p id="medium-priority-count">0</p>
+                </div>
+                <div class="widget" id="low-priority-widget">
+                    <h3>Low Priority Tasks</h3>
+                    <p id="low-priority-count">0</p>
+                </div>
+                <div class="widget" id="completed-tasks-widget">
+                    <h3>Completed Tasks</h3>
+                    <p id="completed-tasks-count">0</p>
+                </div>
+                <div class="widget" id="pending-tasks-widget">
+                    <h3>Pending Tasks</h3>
+                    <p id="pending-tasks-count">0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tasks Section -->
+        <section id="tasks">
+            <h2>Manage Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required>
+                <select id="task-priority" required>
+                    <option value="High">High Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+                </select>
+                <button type="submit" id="addbtn">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics">
+            <h2>Analytics</h2>
+            <div class="canvas-container">
+                <canvas id="priorityChart" width="400" height="200"></canvas>
+                <canvas id="statusChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dynamic Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

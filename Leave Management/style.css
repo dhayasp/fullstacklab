@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4caf9b;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form label, form select, form input, form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+#leave-days{
+    padding:8px 1px 8px 0px;
+}
+form button {
+    background: #4ca2af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+form button:hover {
+    background: #a04548;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #4caf9b;
+    color: white;
+}
+
+#leave-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+#leave-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

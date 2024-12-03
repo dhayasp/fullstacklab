@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Grocery Delivery</h1>
+        <p>Order from the best supermarkets</p>
+    </header>
+    <nav>
+        <a href="#supermarkets">Supermarkets</a>
+        <a href="#cart">Cart</a>
+    </nav>
+    <section id="supermarkets">
+        <h2>Supermarkets</h2>
+        <div class="supermarket">
+            <h3>Supermart 1</h3>
+            <button onclick="loadGroceries('Supermart 1')">Shop Now</button>
+        </div>
+        <div class="supermarket">
+            <h3>Supermart 2</h3>
+            <button onclick="loadGroceries('Supermart 2')">Shop Now</button>
+        </div>
+    </section>
+    
+    <section id="grocery-list">
+        <h2>Available Groceries</h2>
+        <div id="groceries"></div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <div id="total-price">Total: $0</div>
+        <button onclick="generateBill()">Generate Bill</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Grocery Delivery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

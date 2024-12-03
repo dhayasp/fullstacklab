@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #4caf50, #1e88e5);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #3d085c;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f8f8f9;
+    color: black;
+}
+
+/* Section Styles */
+main {
+    margin: 1rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.widget {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f3f3f3, #e5e5e5);
+    box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+li{
+    padding:2px 10px 2px 10px;
+    margin-left: 10px;
+}
+button{
+    background-color: rgb(255, 0, 123);
+    padding: auto;
+    margin-left: auto;
+    margin-bottom: 3px;
+}
+#addbtn{
+    background-color: #5ac131;
+    color: #331c1a;
+}
+#addbtn:hover{
+    background-color: #dafa06;
+    color: #fb1a06;
+}
+button:hover{
+    background-color: #70cc4c;
+}
+
+.widget:nth-child(1) { background: #ff5252; }
+.widget:nth-child(2) { background: #ffb74d; }
+.widget:nth-child(3) { background: #81c784; }
+.widget:nth-child(4) { background: #1e88e5; }
+.widget:nth-child(5) { background: #fdd835; }
+
+.canvas-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+canvas {
+    max-width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer{
+    text-align: center;
+}

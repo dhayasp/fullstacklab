@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+}
+
+button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #04529a;
+}
+
+#userPosts, #followedPosts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#followingsList li {
+    padding: 5px;
+}
+
+.like-btn, .dislike-btn, .comment-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #1877f2;
+    font-size: 14px;
+}
+
+.comment-section {
+    margin-top: 10px;
+}
+
+.comment-input {
+    width: 80%;
+    padding: 5px;
+}
+
+.comment-btn {
+    padding: 5px 10px;
+    background-color: #34b7f1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-btn:hover {
+    background-color: #0391b6;
+}

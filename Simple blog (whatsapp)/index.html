@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page">
+        <h1 class="title">Micro-WhatsApp</h1>
+        <div class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+            <button class="login-btn" onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <!-- Chat Page -->
+    <div id="chat-page" class="hidden">
+        <header class="chat-header">
+            <h1>Micro-WhatsApp</h1>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </header>
+        <main>
+            <div id="user1-chat" class="chat-window">
+                <h2 class="chat-title">User1</h2>
+                <div class="chat-box" id="user1-chat-box"></div>
+                <div class="message-input">
+                    <textarea id="user1-message" placeholder="Type your message"></textarea>
+                    <button class="send-btn" onclick="sendMessage('User1')">Send</button>
+                </div>
+            </div>
+            <div id="user2-chat" class="chat-window">
+                <h2 class="chat-title">User2</h2>
+                <div class="chat-box" id="user2-chat-box"></div>
+                <div class="message-input">
+                    <textarea id="user2-message" placeholder="Type your message"></textarea>
+                    <button class="send-btn" onclick="sendMessage('User2')">Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
