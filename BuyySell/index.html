@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifieds - Buy and Sell Used Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Buy and Sell Products</h1>
+        <nav>
+            <a href="#post-ad">Products</a>
+            <a href="#view-ads">View Products</a>
+            <a href="#my-products">My Products</a>
+            <a href="#search">Search</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Post Ad Section -->
+        <section id="post-ad">
+            <h2>Sell Products</h2>
+            <form id="ad-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="Enter product title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Enter product description" required></textarea>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" placeholder="Enter product price" required>
+
+                <button type="submit">sell</button>
+            </form>
+        </section>
+
+        <!-- View Ads Section -->
+        <section id="view-ads">
+            <h2>Available Products</h2>
+            <div id="ads-list"></div>
+        </section>
+
+        <!-- My Products Section -->
+        <section id="my-products">
+            <h2>My Products</h2>
+            <h3>Seller's Products</h3>
+            <div id="seller-products-list"></div>
+            <h3>Buyer's Products</h3>
+            <div id="buyer-products-list"></div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search">
+            <h2>Search Products</h2>
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <button onclick="searchAds()">Search</button>
+            <div id="search-results"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Classifieds - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
