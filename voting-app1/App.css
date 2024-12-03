@@ -1,0 +1,61 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgba(0, 123, 105, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .App {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h1 {
+    color: #28a745;
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 183, 255, 0.6);
+    transform: scale(1.1);
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  h3 {
+    color: #28a745;
+  }
+  
+  h2 {
+    color: #ff6f61;
+  }
+  
